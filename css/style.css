@@ -1,0 +1,446 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+main {
+  background: linear-gradient(to top, #c5d5e3 0%, #eaf4fd 100%);
+}
+
+.main_header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  padding: 10px;
+  border-bottom: 2px #cccccc solid;
+}
+
+.nav_container,
+.header_nav_list {
+  display: flex;
+}
+
+.nav_container {
+  justify-content: space-between;
+  font-family: "Jura", sans-serif, monospace;
+}
+
+.header_img {
+  width: 60px;
+  height: 60px;
+  border: 2px black solid;
+  border-radius: 50%;
+  background-color: rgba(133, 132, 132, 0.34);
+}
+
+.to_start {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 2px #c3daed solid;
+  box-shadow: 5px 5px 15px 2px rgba(183, 182, 182, 0.5);
+  background-color: #c3daed;
+  border-radius: 50px;
+  transition: all 200ms ease-in-out;
+  margin: 0 0 0 20px;
+}
+
+.to_start:hover,
+.nav_li_wrap:hover {
+  box-shadow: 5px 5px 10px 3px rgba(102, 101, 101, 0.5);
+  background-color: #afcee6;
+  border-color: #afcee6f0;
+}
+
+.header_text {
+  width: 120px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+.header_nav {
+  display: flex;
+  height: 75px;
+  margin: 0 10px;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.header_nav_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav_li_wrap {
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px #c3daed solid;
+  box-shadow: 5px 5px 15px 2px rgba(183, 182, 182, 0.5);
+  background-color: #c3daed;
+  border-radius: 50px;
+  margin: 0 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.nav_link_img {
+  width: 40px;
+}
+
+.section {
+  padding: 20px 120px;
+}
+
+.container {
+  border: 2px #eaf4fe solid;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  box-shadow: 6px 6px 15px 4px rgba(102, 101, 101, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section_header {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.section_header_name {
+  max-width: 360px;
+  margin: 10px auto;
+  padding: 20px 0;
+  border: 2px #c0ddf20e solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+  background-color: #c0ddf2a2;
+  border-radius: 50px;
+  font-family: "Jura", sans-serif, monospace;
+  font-weight: 700;
+  font-size: 30px;
+  transition: all 200ms ease-in-out;
+}
+
+.section_header_name:hover {
+  border: 2px #b9d9ef0e solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.5);
+  background-color: #b9d9ef;
+}
+
+.movies {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.movie_list {
+  border: 2px #f1f8ff solid;
+  flex-direction: column;
+  list-style: none;
+  padding: 15px;
+  margin: 15px auto;
+  text-align: center;
+  line-height: 25px;
+  background-color: #f1f8ff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(183, 182, 182, 0.3);
+}
+
+.movie_single {
+  border-bottom: 2px #cccccc solid;
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.movie_img {
+  width: 60px;
+  margin: 0 auto;
+}
+
+.movie_type {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  border: 2px #deeaf2a2 solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+  background-color: #deeaf2a2;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.movie_type:hover,
+.fav_movie:hover,
+.table:hover,
+.city_pick_wrap:hover,
+.city_pick_select:hover,
+.details:hover {
+  border: 5px #d8edfa solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.5);
+  background-color: #d8edfa;
+  border-radius: 5px;
+}
+
+.movie_type_name {
+  text-align: center;
+  padding: 5px 5px;
+  margin: 0 auto;
+  font-family: "Jura", sans-serif, monospace;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.fav_movie {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 35px;
+  padding: 20px 20px;
+  border: 2px #deeaf2a2 solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+  background-color: #deeaf2;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.fav_movie_img {
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+}
+
+.fav_movie_about {
+  width: 600px;
+  background-color: #f1f8ff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(183, 182, 182, 0.3);
+  border: 2px #f1f8ff solid;
+}
+
+.fav_movie_type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 120px 30px 90px;
+  background-color: #e4f3ff;
+  border-radius: 50px;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+}
+
+.fav_movie_title_icon {
+  width: 50px;
+  height: 50px;
+  border: 2px #c3daed solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.211);
+  background-color: #c3daed;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.fav_movie_title_name {
+  font-family: "Jura", sans-serif, monospace;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+.fav_movie_description {
+  text-align: justify;
+  margin: 30px 50px;
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+td,
+th {
+  border: 1px black solid;
+  padding: 10px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: center;
+  height: 20px;
+  width: 120px;
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 18px;
+}
+
+th:hover,
+td:hover {
+  background-color: #c3e6fb;
+}
+
+th {
+  height: 30px;
+}
+
+.table {
+  margin: 10px auto 30px auto;
+  padding: 50px;
+  height: 330px;
+  border: 2px #deeaf200 solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+  background-color: #deeaf2;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table:hover {
+  border-radius: 10px;
+  border: 2px #deeaf200 solid;
+}
+
+thead,
+tbody {
+  padding: 10px;
+}
+
+.table_caption {
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 0 200px 15px 200px;
+  border-bottom: 2px #cccccc solid;
+}
+
+.h3_city {
+  font-family: "Jura", sans-serif, monospace;
+  text-align: center;
+  width: 300px;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 5px auto;
+  padding: 5px;
+  padding-bottom: 10px;
+  border-bottom: 2px #cccccc solid;
+}
+
+.city_pick_wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 35px;
+  padding: 20px;
+  border: 2px #deeaf2a2 solid;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.3);
+  background-color: #deeaf2;
+  border-radius: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+.city_pick_img {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.city_pick {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 500px;
+  background-color: #f1f8ff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(183, 182, 182, 0.3);
+  border: 2px #f1f8ff solid;
+}
+
+.city_pick_select {
+  width: 350px;
+  height: 70px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #cee2f1a2;
+  border: 2px #cee2f1a2 solid;
+  outline: 2px #fbfbfb;
+}
+
+.option_pick {
+  background-color: #cae3f6b7;
+}
+
+.option_pick:nth-child(1),
+.option_pick:nth-child(3),
+.option_pick:nth-child(5),
+.option_pick:nth-child(7) {
+  background-color: #bbd7edde;
+}
+
+.summary {
+  border-bottom: 3px #f4f3f3 solid;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.details {
+  margin: 0 auto;
+  text-align: justify;
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 16px;
+  font-weight: 500;
+  width: 250px;
+  padding: 15px;
+  background-color: #cee2f1a2;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 2px rgba(183, 182, 182, 0.3);
+  border: 2px #cee2f1a2 solid;
+  line-height: 20px;
+}
+
+.section:last-child {
+  padding-bottom: 35px;
+}
+
+footer {
+  background-color: #96b8d9;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_author {
+  width: 400px;
+  text-align: center;
+  margin: 15px auto;
+  font-family: "Jura", sans-serif, monospace;
+  font-size: 25px;
+  font-weight: 700;
+  color: #e8f5ff;
+  border-bottom: 2px solid #e8f5ffd7;
+}
+
+.find_me_logo {
+  width: 50px;
+  margin: 0 15px;
+  background-color: #d8e8f4;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px 2px rgba(101, 101, 101, 0.5);
+  border: 2px #cee2f1a2 solid;
+}
+.find_me_logo:hover {
+  border: 4px #4caeeb86 solid;
+  box-shadow: 5px 5px 15px 2px rgba(74, 74, 74, 0.7);
+  background-color: #4caeeb86;
+}
